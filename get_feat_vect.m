@@ -17,6 +17,7 @@ if type == "vl_sift"
     % Using only the matched keypoints
     fixed_imf = fixed_kp(1:2,matched_result(1,:))';
     moving_imf = moving_kp(1:2,matched_result(2,:))';
+	print("hello")
 elseif type == "sift"
     [fixed_imf, moving_imf] = match(fixed_img, moving_img);
 end
